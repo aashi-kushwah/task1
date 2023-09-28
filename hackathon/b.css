@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("th.jpg"); 
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#bird {
+    position: absolute;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px;
+    top: 50%; /* Adjust the initial position */
+    left: 50px; /* Adjust the initial position */
+    transform: translateY(-50%);
+}
+
+#pipe {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url("ch.png"); /* Set the path to your pipe image */
+    background-size: cover; /* Adjust to fit your image size preferences */
+    bottom: 0;
+}
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
